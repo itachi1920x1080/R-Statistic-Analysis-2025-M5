@@ -1,0 +1,26 @@
+>x <- c (350,700,700,650,550,NA,450,NA,650,700,NA,600,500,700,800,550,650)
+>length(x[is.na(x)])
+Answer:3
+>length(x[ which(x == 700 & !is.na(x)) ]) or length(x[(x == 700 ) & !is.na(x)) ])
+Answer : 4 
+>length(x[which(x > 500)]) or length(x [x > 500& !is.na(x)])
+Answer : 11
+>length(x[x > 600 & !is.na(x)])/length(x [!is.na(x)])  or  length(x [x > 600 & !is.na(x)])/length(x [!is.na(x)])
+Answer :0.5714286
+>length(x[(x > 550 & x < 650 ) & !is.na(x) ])/length(x [!is.na(x)])
+Answer  :0.07142857
+
+>x<- c(80,25,18,35,15,20,NA,28,NA,29)
+>length(x[is.na(x)])
+[1] 2
+>length(x[!is.na(x)])
+[1] 8
+>y<- x[!is.na(x)]
+>y
+[1]80 25 18 35 15 20 28 29
+
+> choose(3,1)/choose (8,1)
+[1] 0.375
+
+q(save = "yes")   # save workspace
+q(save = "no")    # do NOT save
